@@ -21,7 +21,7 @@ from typing import Any, Dict, Optional, Union
 # to ensure it won't fail and a progress bar is displayed
 
 if importlib.util.find_spec("ipywidgets") is not None:
-    from tqdm.auto import tqdm as _tqdm
+    from tqdm.notebook import tqdm as _tqdm
 else:
     from tqdm import tqdm as _tqdm
 
